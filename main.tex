@@ -1,0 +1,224 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{cmbright}
+\usepackage[OT1]{fontenc}
+\usepackage{adjustbox}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{enumitem}
+
+
+% Importing document settings from our file (packages.sty)
+\usepackage{packages}
+
+\newcommand\BackgroundCoverPic{
+    \put(0,0){
+    \parbox[b][\paperheight]{\paperwidth}{%
+    \vfill
+    \centering
+    \includegraphics[width=\paperwidth,height=\paperheight]{000-Cover.pdf}
+    \vfill
+    }}}
+    
+\newcommand\BackgroundPic{
+    \put(0,0){
+    \parbox[b][\paperheight]{\paperwidth}{%
+    \vfill
+    \centering
+    \includegraphics[width=\paperwidth,height=\paperheight]{000-BackGround.pdf}
+    \vfill
+    }}}
+    
+\newcommand\ART{
+    \put(0,0){
+    \parbox[b][\paperheight]{\paperwidth}{%
+    \vfill
+    \centering
+    \includegraphics[width=\paperwidth,height=\paperheight]{000-ART.pdf}
+    \vfill
+    }}}
+
+% Beginning of document
+\begin{document}
+
+\AddToShipoutPicture*{\BackgroundCoverPic}
+% \maketitle
+
+% Inserting title page
+\import{./}{title}
+
+% Defining front matter settings (Norsk: innstillinger for forord m.m.)
+\frontmatter
+
+\AddToShipoutPicture{\BackgroundPic}
+
+% Inserting table of contents
+\tableofcontents
+
+% Inserting list of figures & list of tables
+%\listoffigures
+%\listoftables
+
+% Defining main matter settings (Norsk: innstillinger for hoveddelen av teksten)
+\mainmatter
+
+% Introduction explaining this LaTeX-template
+\section{Introdução}
+Introduction section
+\section{Relação de Equipamentos}
+
+\begin{center}
+\begin{adjustbox}{width=\columnwidth,center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline$\#$ & vara & varb. & varc & N $^{\circ}$ vard. & vare & Oc. varf & varg & varh & vari \\
+\hline
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\hline 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\hline \end{tabular}
+\end{adjustbox}
+\end{center}
+
+\begin{tabular}{|l|l|}
+\hline \textbf{Somax } & 2 \\
+\hline \textbf{Somay } & 2 \\
+\hline
+\end{tabular}
+
+\section{Procedimento}
+Introduzir o procedimento\section{Lista Total}
+\subsection{vara: 1 - 1}
+
+
+
+\begin{adjustbox}{width=18cm ,center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline vara: & 1 & varb: & 1 & $N^{\circ}$ SÉRIE & 1 & \textbf{Página deste Equipamento} & \textbf{1/2} \\
+\hline vard & 1 & vare: & 1 & varf: & 23/05/2023 & varg: & 22/05/2024 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+\begin{adjustbox}{width=18cm ,center}
+\begin{tabular}{|c|p{12cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline $\mathrm{N}^0$ & SERVIÇOS & Frequência (dias) & month & month & month & month & month & month & month & month & month & month & month & month & month \\
+\hline 1 &  Chore & 30 &  &  & &  & &  &  & &  & &  &  &  \\
+\hline
+\hline
+\multicolumn{3}{|c|}{\textbf{Data }} &  & & & & & & & &  &  & &  &  \\
+\hline \multicolumn{3}{|c|}{\textbf{Assinatura }} &  & & & & & & & & & &   &  &  \\
+\hline \multicolumn{3}{|c|}{\textbf{Assinatura }} &  & & & & & & & & & &   &  &  \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+
+\footnotesize\textbf{Observações:}\\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm}
+
+
+
+
+\newpage
+\begin{adjustbox}{width=18cm ,center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline vara: & 1 & varb: & 1 & $N^{\circ}$ SÉRIE & 1 & \textbf{Página deste Equipamento} & \textbf{2/2} \\
+\hline vard & 1 & vare: & 1 & varf: & 23/05/2023 & varg: & 22/05/2024 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+\begin{adjustbox}{width=18cm ,center}
+\begin{tabular}{|c|p{12cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline $\mathrm{N}^0$ & SERVIÇOS & Frequência (dias) & Nov & Dez & Jan & Fev & Mar & Abr & Mai & Jun & Jul & Ago & Set & Out & Nov \\
+\hline 18 & tarefa & 30 & & & & & & & & & & & & & \\
+\hline
+\multicolumn{3}{|c|}{\textbf{Data }} &  & & & & & & & &  &  & &  &  \\
+\hline \multicolumn{3}{|c|}{\textbf{Assinatura }} &  & & & & & & & & & &   &  &  \\
+\hline \multicolumn{3}{|c|}{\textbf{Assinatura }} &  & & & & & & & & & &   &  &  \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+
+\footnotesize\textbf{Observações:}\\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm}
+\newpage
+\subsection{vara: 1 - 1}
+
+
+
+\begin{adjustbox}{width=18cm ,center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline vara: & 1 & varb: & 1 & $N^{\circ}$ SÉRIE & 1 & \textbf{Página deste Equipamento} & \textbf{1/2} \\
+\hline vard & 1 & vare: & 1 & varf: & 23/05/2023 & varg: & 22/05/2024 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+\begin{adjustbox}{width=18cm ,center}
+\begin{tabular}{|c|p{12cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline $\mathrm{N}^0$ & SERVIÇOS & Frequência (dias) & month & month & month & month & month & month & month & month & month & month & month & month & month \\
+\hline 1 &  Chore & 30 &  &  & &  & &  &  & &  & &  &  &  \\
+\hline
+\hline
+\multicolumn{3}{|c|}{\textbf{Data }} &  & & & & & & & &  &  & &  &  \\
+\hline \multicolumn{3}{|c|}{\textbf{Assinatura }} &  & & & & & & & & & &   &  &  \\
+\hline \multicolumn{3}{|c|}{\textbf{Assinatura }} &  & & & & & & & & & &   &  &  \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+
+\footnotesize\textbf{Observações:}\\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm}
+
+
+
+
+\newpage
+\begin{adjustbox}{width=18cm ,center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline vara: & 1 & varb: & 1 & $N^{\circ}$ SÉRIE & 1 & \textbf{Página deste Equipamento} & \textbf{2/2} \\
+\hline vard & 1 & vare: & 1 & varf: & 23/05/2023 & varg: & 22/05/2024 \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+\begin{adjustbox}{width=18cm ,center}
+\begin{tabular}{|c|p{12cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline $\mathrm{N}^0$ & SERVIÇOS & Frequência (dias) & Nov & Dez & Jan & Fev & Mar & Abr & Mai & Jun & Jul & Ago & Set & Out & Nov \\
+\hline 18 & tarefa & 30 & & & & & & & & & & & & & \\
+\hline
+\multicolumn{3}{|c|}{\textbf{Data }} &  & & & & & & & &  &  & &  &  \\
+\hline \multicolumn{3}{|c|}{\textbf{Assinatura }} &  & & & & & & & & & &   &  &  \\
+\hline \multicolumn{3}{|c|}{\textbf{Assinatura }} &  & & & & & & & & & &   &  &  \\
+\hline
+\end{tabular}
+\end{adjustbox}
+
+
+\footnotesize\textbf{Observações:}\\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm} \\[0.1cm]
+\noindent\rule{\textwidth}{0.2mm}
+\newpage
+\newpage
+\section{ANEXOS (Ordens de Serviço e N1 do prestador)}
+\end{document}
